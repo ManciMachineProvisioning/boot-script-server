@@ -1,0 +1,123 @@
+<section class="default-background fullscreen fdb-block fdb-viewport bg-dark">
+
+  <div class="container-fluid hidden" id="container-proceed">
+    <nav class="navbar fixed-top hidden">
+      <a href="#">
+        <img src="/img/logo_small.png" height="30" alt="image">
+      </a>
+    </nav>
+
+    <div class="wizard-steps" id="proceed-steps">
+      <div class="login-step">
+        <div class="row justify-content-center align-items-center login-form hidden">
+          <div class="col-12 col-md-6 col-lg-5 col-xl-4 text-center">
+            <div class="fdb-box fdb-touch">
+              <div class="row">
+                <div class="col">
+                  <h1>Authentication</h1>
+                  Please enter your credentials.
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Email">
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col">
+                  <input type="password" class="form-control mb-1" placeholder="Password">
+                  <p class="text-right"><a href="https://www.froala.com">Recover Password</a></p>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col">
+                  <button class="btn" type="button" id="btn-login">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="provision-step">
+        <div class="row justify-content-center align-items-center provision-form">
+          <div class="col-12 col-lg-10 col-xl-8">
+            <div class="fdb-box fdb-touch">
+              <div class="row">
+                <div class="col">
+                  <h1>Confirm details</h1>
+
+                  <div class="row">
+                    <section class="system-details col-12 col-lg-6">
+                      <h2>System</h2>
+                      <dl class="row">
+                        <dt class="col-sm-4">Manufacturer</dt>
+                        <dd class="col-sm-8">{{manufacturer}}</dd>
+                        <dt class="col-sm-4">Product</dt>
+                        <dd class="col-sm-8">{{product}}</dd>
+                        <dt class="col-sm-4">Serial</dt>
+                        <dd class="col-sm-8">{{serial}}</dd>
+                      </dl>
+                    </section>
+
+                    <section class="user-details col-12 col-lg-6">
+                      <h2>User</h2>
+                      <dl class="row">
+                        <dt class="col-sm-3">Full name</dt>
+                        <dd class="col-sm-9">{{fullname}}</dd>
+                        <dt class="col-sm-3">E-mail</dt>
+                        <dd class="col-sm-9">{{email}}</dd>
+                      </dl>
+                    </section>
+                  </div>
+
+                  <section class="installation-target">
+                    <h2>Installation target</h2>
+                    <form action="#">
+                      <div class="form-group">
+                        <label for="operating-system">Select operating system to install:</label>
+                        <select class="form-control" id="operating-system">
+                          <option value="1">Windows 10</option>
+                          <option value="1">Ubuntu 16.04.3 LTS</option>
+                        </select>
+                      </div>
+
+                      <div class="form-group text-center">
+                        <button class="btn btn-primary" id="btn-assign-and-reboot">Assign and Reboot to OS Installation</button>
+                      </div>
+                    </form>
+                  </section>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <footer class="footer-small">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <p>&copy; 2017 The Manci Corporation. All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <div class="container-fluid justify-content-center d-flex" id="container-welcome">
+    <div class="row justify-content-center text-center align-items-center">
+      <div class="col-12 col-md-8">
+        <img src="/img/logo.png">
+        <h1>{{title}}</h1>
+        <p class="text-h3">The provisioning process will assign this computer system to your account and install a suitable OS.</p>
+        <p class="mt-5"><a href="#" class="btn" id="btn-begin-provisioning">Begin provisioning</a></p>
+      </div>
+    </div>
+  </div>
+
+</section>

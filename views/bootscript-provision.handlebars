@@ -1,0 +1,3 @@
+#!ipxe
+initrd http://{{imageserver}}/initrd.img
+chain http://{{imageserver}}/vmlinuz boot=live components quiet splash fetch=http://{{imageserver}}/filesystem.squashfs provision_url={{provision_baseurl}}?manufacturer=${manufacturer:uristring}&product=${product:uristring}&serial=${serial:uristring}&uuid=${uuid:uristring}

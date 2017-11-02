@@ -1,0 +1,16 @@
+#!ipxe
+
+menu Machine Provisioning
+item --gap --             Placeholder for actual installation procedure.
+item --key x exit         Exit iPXE and continue BIOS boot
+
+choose  selected || goto cancel
+goto ${selected}
+
+:cancel
+echo You cancelled the menu, dropping you to a shell
+
+:shell
+echo Type 'exit' to get the back to the menu
+shell
+goto start

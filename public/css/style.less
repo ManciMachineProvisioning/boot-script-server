@@ -1,0 +1,91 @@
+html,body {
+  width: 100%;
+  height: 100%;
+}
+
+section.default-background {
+  background-image: url(../img/bg_0.svg);
+}
+
+section.fullscreen {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  > .container-fluid {
+    height: 100%;
+  }
+}
+
+.container-fluid.hidden {
+  display: none !important;
+}
+
+.fdb-block {
+  padding: 0;
+}
+
+nav.hidden {
+  margin-top: -40px;
+  opacity: 0;
+}
+
+#container-welcome {
+  opacity: 0;
+}
+
+#container-proceed {
+  overflow: hidden;
+  padding: 0;
+
+  .wizard-steps {
+    width: 200vw;
+    height: 100%;
+
+    > div {
+      clear:none;
+      white-space: nowrap;
+      float: left;
+      width: 100vw;
+      height: 100%;
+    }
+  }
+
+  .login-form, .provision-form {
+    height: 100%;
+  }
+
+  .login-form {
+    flex: 1;
+  }
+
+  .login-form.hidden {
+    opacity: 0;
+  }
+
+  .provision-form {
+    .fdb-box {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      /*height: 75vh;*/
+    }
+  }
+
+  .system-details, .user-details, .installation-target {
+    opacity: 0;
+  }
+}
+
+footer {
+  padding: 0 !important;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+select {
+  -webkit-appearance: none;
+}
