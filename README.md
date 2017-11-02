@@ -39,4 +39,4 @@ https://github.com/PolymerElements/font-roboto-local
 
 ## Logo design
 
-[Logo vector create by Freepik](https://www.freepik.com/free-photos-vectors/logo)
+[Logo vector created by Freepik](https://www.freepik.com/free-photos-vectors/logo)
