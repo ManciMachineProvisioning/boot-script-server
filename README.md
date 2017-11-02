@@ -1,6 +1,6 @@
 # Boot Script server
 
-![Welcome screen](/screenshots/welcome.png)
+![Welcome screen](/screenshots/welcome_small.png)
 
 Contains the logic for serving the appropriate boot script for the host. It is only an early PoC version with a lot of implementation details missing but the very bare essentials suitable for demos are present.
 
