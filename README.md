@@ -1,5 +1,7 @@
 # Boot Script server
 
+![Welcome screen](/screenshots/welcome.png)
+
 Contains the logic for serving the appropriate boot script for the host. It is only an early PoC version with a lot of implementation details missing but the very bare essentials suitable for demos are present.
 
 You can see it in action here:
